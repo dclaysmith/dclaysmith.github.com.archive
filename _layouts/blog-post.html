@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Smith Shop by dclaysmith</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -40,11 +40,15 @@
       </header>
       
       <section>
+      	{{ content }}
+      </section>
+
+      <section>
 
 		<ul class="posts">
-		  
-		    <li><span>02 Jun 2013</span> &raquo; <a href="/2013/06/02/adding_realtime_functionality_to_php_ap.html">Adding Realtime Functionality to Existing PHP Apps</a></li>
-		  
+		  {% for post in site.posts %}
+		    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
+		  {% endfor %}
 		</ul>        
 
 	  </section>
@@ -53,7 +57,7 @@
         <p><small>&copy; D Clay Smith</small></p>
       </footer>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <script src="/javascripts/scale.fix.js"></script>
     
   </body>
 </html>
