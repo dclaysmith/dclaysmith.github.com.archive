@@ -1,0 +1,15 @@
+.blog-recent-menu {
+  background: #f8f8f8;  
+  border-radius:5px;
+  padding: 0px;
+  margin-bottom: 50px;
+}
+.blog-recent-menu ul {
+	margin: 10px;
+	list-style: none;
+	padding: 0px;
+}
+.blog-recent-menu ul li {
+	margin: 0px;
+	padding: 0px;
+}
