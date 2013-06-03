@@ -3,10 +3,12 @@ title: Adding Realtime Functionality to Existing PHP Apps
 published: true
 layout: main
 ---
-<div class="blog-index">  
-  {% assign post = site.posts.first %}
-  {% include blog-post-detail.html %}
-</div>
+<section>
+    {% assign post = site.posts.first %}
+    <span>{{ post.date | date_to_long_string }}</span>
+    <h1>{{ post.title }}</h1>
+    {{ post.content }}
+</section>
 
 <section class="blog-recent-menu">
     <ul class="posts">

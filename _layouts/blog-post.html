@@ -1,10 +1,11 @@
 ---
 layout: main
 ---
-
-<div class="blog-index">  
-  {% include blog-post-detail.html %}
-</div>
+<section>
+    <span>{{ page.date | date_to_long_string }}</span>
+    <h1>{{ page.title }}</h1>
+    {{ page.content }}
+</section>
 
 <section>
 
