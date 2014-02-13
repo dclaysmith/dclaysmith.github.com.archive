@@ -1,0 +1,34 @@
+{
+    "name": "dclaysmith/dclaysmith.github.com",
+    "type": "Application",
+    "description": "My Personal Website",
+    "homepage":"https://www.smithshop.com",
+    "authors": [
+        {
+            "name": "D Clay Smith",
+            "email": "dclaysmith@gmail.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        },
+        {
+            "type": "pear",
+            "url": "http://htmlpurifier.org"
+        }
+    ],
+    "require": {
+        "pear-pear.php.net/Log": "*",
+        "pear-pear.php.net/Mail": "*",
+        "pear-pear.php.net/Mail_Mime": "*",
+        "pear-pear.php.net/Net_Smtp": "*",
+        "pear-pear.php.net/Validate": "0.8.5",
+        "pear-htmlpurifier.org/HTMLPurifier": "*",
+        "aws/aws-sdk-php": "2.5.*"
+    },
+    "require-dev": {
+        "rackspace/php-opencloud": "dev-master"
+    }
+}
